@@ -36,4 +36,12 @@ class hextodec: Fragment() {
         super.onDetach()
     }
 
+    fun convert(x: String):Int{
+        var result=0
+        var temp: Int
+
+
+        return result
+    }
+
 }

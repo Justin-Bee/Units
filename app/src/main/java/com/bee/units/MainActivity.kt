@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity(), FragmentDrawer.FragmentDrawerListener 
             var fragment: Fragment? = null
             var title = getString(R.string.app_name)
             fragment = home()
-            title = "home"
+            title = getString(R.string.menu_home)
             val fragmentManager = supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.container_body, fragment!!)
@@ -85,11 +85,11 @@ class MainActivity : AppCompatActivity(), FragmentDrawer.FragmentDrawerListener 
         when (position) {
             0 -> {
                 fragment = home()
-                title = "Home"
+                title = getString(R.string.menu_home)
             }
             1 -> {
                 fragment = hextodec()
-                title = "Hex To Dec"
+                title = getString(R.string.hextodec)
             }
 
 
