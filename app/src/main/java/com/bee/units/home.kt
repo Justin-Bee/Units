@@ -1,6 +1,5 @@
 package com.bee.units
 
-
 import android.app.Activity
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -9,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class hextodec: Fragment() {
+class home: Fragment() {
 
 
 
@@ -25,7 +24,7 @@ class hextodec: Fragment() {
 
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.hextodec, container, false)
+        return inflater.inflate(R.layout.home, container, false)
     }
 
     override fun onAttach(activity: Activity?) {

@@ -1,55 +1,48 @@
 package com.bee.units
 
-import android.content.Intent
+
 import android.os.Bundle
-import android.support.design.widget.FloatingActionButton
-import android.support.design.widget.Snackbar
-import android.support.v4.view.GravityCompat
-import android.support.v7.app.ActionBarDrawerToggle
-import android.view.MenuItem
+import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentManager
+import android.support.v4.app.FragmentTransaction
 import android.support.v4.widget.DrawerLayout
-import android.support.design.widget.NavigationView
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import android.view.Menu
+import android.view.MenuItem
+import android.view.View
+import android.widget.Toast
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity(), FragmentDrawer.FragmentDrawerListener {
 
+    private var mToolbar: Toolbar? = null
+    private var drawerFragment: FragmentDrawer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val toolbar: Toolbar = findViewById(R.id.toolbar) as Toolbar
-        setSupportActionBar(toolbar)
 
-        val fab: FloatingActionButton = findViewById(R.id.fab) as FloatingActionButton
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout) as DrawerLayout
-        val navView: NavigationView = findViewById(R.id.nav_view) as NavigationView
-        val toggle = ActionBarDrawerToggle(
-            this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
+        mToolbar = findViewById(R.id.toolbar) as Toolbar
+
+        setSupportActionBar(mToolbar)
+        supportActionBar!!.setDisplayShowHomeEnabled(true)
+
+        drawerFragment = supportFragmentManager.findFragmentById(R.id.fragment_navigation_drawer) as FragmentDrawer?
+        drawerFragment!!.setUp(
+            R.id.fragment_navigation_drawer,
+            findViewById(R.id.drawer_layout) as DrawerLayout,
+            mToolbar!!
         )
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
+        drawerFragment!!.setDrawerListener(this)
 
-        navView.setNavigationItemSelectedListener(this)
+        // display the first navigation drawer view on app launch
+        displayView(0)
     }
 
-    override fun onBackPressed() {
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout) as DrawerLayout
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
-        }
-    }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
+        menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
 
@@ -57,27 +50,66 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        return when (item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
+        val id = item.itemId
+
+
+        if (id == R.id.action_settings) {
+            return true
+        }
+
+        if (id == R.id.action_search) {
+            var fragment: Fragment? = null
+            var title = getString(R.string.app_name)
+            fragment = home()
+            title = "home"
+            val fragmentManager = supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.container_body, fragment!!)
+            fragmentTransaction.commit()
+
+            // set the toolbar title
+            supportActionBar!!.setTitle(title)
+            return true
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
+
+    override fun onDrawerItemSelected(view: View, position: Int) {
+        displayView(position)
+    }
+
+    private fun displayView(position: Int) {
+        var fragment: Fragment? = null
+        var title = getString(R.string.app_name)
+        when (position) {
+            0 -> {
+                fragment = home()
+                title = "Home"
+            }
+            1 -> {
+                fragment = hextodec()
+                title = "Hex To Dec"
+            }
+
+
+            else -> {
+            }
+        }
+
+        if (fragment != null) {
+            val fragmentManager = supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.container_body, fragment)
+            fragmentTransaction.commit()
+
+            // set the toolbar title
+            supportActionBar!!.setTitle(title)
         }
     }
 
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        // Handle navigation view item clicks here.
-        when (item.itemId) {
-            R.id.nav_home -> {
-                // Handle the camera action
-            }
-            R.id.hex_to_dec -> {
-                val intent = Intent(this,HextoDec::class.java)
-                startActivity(intent)
-            }
+    companion object {
 
-
-        }
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout) as DrawerLayout
-        drawerLayout.closeDrawer(GravityCompat.START)
-        return true
+        private val TAG = MainActivity::class.java.simpleName
     }
 }
