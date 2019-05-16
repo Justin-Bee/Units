@@ -22,7 +22,8 @@ class hextodec: Fragment(), View.OnClickListener {
         when (v?.id) {
             R.id.abutton-> {
                 entry = textBox.text.toString()
-                textBox.setText(entry)
+                textView.setText("Result: "+ entry)
+
             }else->{
 
         }
