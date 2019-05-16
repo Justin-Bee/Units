@@ -5,6 +5,7 @@ import android.app.Activity
 import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,14 +16,29 @@ import kotlinx.android.synthetic.main.hextodec.*
 
 
 
-class hextodec: Fragment() {
+class hextodec: Fragment(), View.OnClickListener {
+
+    override fun onClick(v: View?) {
+        when (v?.id) {
+            R.id.abutton-> {
+                entry = textBox.text.toString()
+                textBox.setText(entry)
+            }else->{
+
+        }
+
+        }
+        entry = textBox.text.toString()
+        textBox.setText(entry)
+    }
 
     var entry: String = ""
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-
+    companion object {
+        fun newInstance(): hextodec {
+            return hextodec()
+        }
     }
 
     override fun onCreateView(
@@ -33,19 +49,11 @@ class hextodec: Fragment() {
 
         // Inflate the layout for this fragment
         val view: View=  inflater.inflate(R.layout.hextodec, container, false)
-        abutton.setOnClickListener {
-            onClick(it)
-        }
+        val button: Button = view.findViewById(R.id.abutton)
+        button.setOnClickListener(this)
         return view
     }
 
-    override fun onAttach(activity: Activity?) {
-        super.onAttach(activity)
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-    }
 
     fun convert(x: String):Int{
         var result=0
@@ -55,12 +63,5 @@ class hextodec: Fragment() {
         return result
     }
 
-         fun onClick(v: View?) {
-                    entry = textBox.text.toString()
-                    textBox.setText(entry)
-        }
 
 }
-
-
-
