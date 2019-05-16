@@ -21,9 +21,7 @@ class hextodec: Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-         //abutton.setOnClickListener {
-        //     onClick()
-       //  }
+
 
     }
 
@@ -34,7 +32,11 @@ class hextodec: Fragment() {
 
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.hextodec, container, false)
+        val view: View=  inflater.inflate(R.layout.hextodec, container, false)
+        abutton.setOnClickListener {
+            onClick(it)
+        }
+        return view
     }
 
     override fun onAttach(activity: Activity?) {
@@ -53,7 +55,7 @@ class hextodec: Fragment() {
         return result
     }
 
-        fun onClick() {
+         fun onClick(v: View?) {
                     entry = textBox.text.toString()
                     textBox.setText(entry)
         }
