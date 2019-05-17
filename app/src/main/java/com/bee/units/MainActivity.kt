@@ -91,6 +91,10 @@ class MainActivity : AppCompatActivity(), FragmentDrawer.FragmentDrawerListener 
                 fragment = hextodec()
                 title = getString(R.string.hextodec)
             }
+            2 -> {
+                fragment = Temperature()
+                title = getString(R.string.temp)
+            }
 
 
             else -> {

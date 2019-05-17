@@ -10,14 +10,26 @@
 
     <string name="menu_home">Home</string>
     <string name="hextodec">Hex to Dec</string>
+    <string name="temp">Temperature</string>
 
     <string-array name="nav_drawer_labels">
         <item>@string/menu_home</item>
         <item>@string/hextodec</item>
+        <item>@string/temp</item>
     </string-array>
 
     <string name="title_section1">Home</string>
     <string name="title_section2">HexToDec</string>
+    <string name="title_section3">Temperature</string>
+
+
+    <string-array name="temp_array">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+
 
 
 </resources>

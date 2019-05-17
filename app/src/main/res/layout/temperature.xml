@@ -8,12 +8,12 @@
          space available using match_parent in both dimensions. -->
     <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
                  android:layout_height="match_parent" >
-        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="fill_parent"
+        <ScrollView
+                android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
         >
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            <RelativeLayout
+                    android:layout_width="match_parent"
                             android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
                             android:paddingRight="@dimen/activity_horizontal_margin"
                             android:paddingTop="@dimen/activity_vertical_margin"
@@ -25,12 +25,13 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:textSize="35sp"
-                        android:text="Hex to Decimal"
+                        android:text="Temperature"
                         android:textColor="@color/textColor"
                         android:gravity="center"
                         android:id="@+id/title"
                         android:paddingBottom="15dp"
                         android:textStyle="bold"/>
+
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -38,27 +39,38 @@
                         android:textSize="25sp"
                         android:textColor="@color/textColor"
                         android:textStyle="bold"
-                android:layout_below="@id/title"
-                android:id="@+id/textBox"/>
+                        android:layout_below="@id/title"
+                        android:id="@+id/textBox"/>
+                <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textBox"
 
+                        android:id="@+id/fromSpinner"/>
                 <Button
                         android:text="Calculate"
                         android:layout_width="wrap_content"
                         android:gravity="center"
                         android:layout_centerHorizontal="true"
-                        android:layout_below="@id/textBox"
+                        android:layout_below="@id/fromSpinner"
                         android:shape="oval"
                         android:background="@color/buttonColor"
                         android:layout_height="wrap_content" android:id="@+id/abutton"/>
+                <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/abutton"
+                        android:id="@+id/toSpinner"/>
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/textView"
                         android:textSize="25sp"
-                        android:layout_below="@+id/abutton"
+                        android:layout_below="@+id/toSpinner"
                         android:textColor="@color/textColor"
                         android:textStyle="bold"
                         android:text="Result:"/>
+
 
             </RelativeLayout>
         </ScrollView>

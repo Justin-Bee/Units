@@ -22,16 +22,12 @@ class hextodec: Fragment(), View.OnClickListener {
         when (v?.id) {
             R.id.abutton-> {
                 entry = textBox.text.toString()
-                textView.setText("Result: "+ entry)
-
             }else->{
-
         }
-
         }
         entry = textBox.text.toString()
         val result = convert(entry)
-        textBox.setText(result)
+        textView.text = "Result: $result"
     }
 
     var entry: String = ""
@@ -57,9 +53,13 @@ class hextodec: Fragment(), View.OnClickListener {
     }
 
 
-    fun convert(x: String):Int{
-        var result= Integer.parseInt(x, 16)
-        return result
+    fun convert(x: String):String{
+        try {
+            var result = Integer.parseInt(x, 16)
+            return result.toString()
+        }catch(nfe: NumberFormatException){
+            return ("Invalid Input")
+        }
     }
 
 

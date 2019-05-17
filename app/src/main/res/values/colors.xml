@@ -5,7 +5,8 @@
     <color name="colorAccent">#D81B60</color>
     <color name="pageColor">#772953</color>
     <color name="textColor">#FFFFFF</color>
-    <color name="buttonColor">#77216F</color>
+    <color name="buttonColor">#E95420</color>
     <color name="navDrawer">#77216F</color>
     <color name="drawerTop">#2C001E</color>
+    <color name="toolBar">#5E2750</color>
 </resources>
