@@ -137,34 +137,36 @@ class Temperature: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedL
 
     fun celsiusToKelvin(x: Int): String{
         var result =""
-
+        var temp = x + 273
+        result = temp.toString()
         return result
     }
 
     fun fahrenheitToCelcius(x: Int): String{
         var result =""
-
+        var temp: Double = ((x-32)*(0.5555555))
+        result = temp.toString()
         return result
     }
 
     fun fahrenheitToKelvin(x: Int): String{
         var result =""
-
-
-
+        var temp: Double = ((x-32)*(0.5555555))+273
+        result = temp.toString()
         return result
     }
 
     fun kelvinToCelsius(x: Int): String{
         var result =""
-
+        var temp = x - 273
+        result = temp.toString()
         return result
     }
 
     fun kelvinToFahrenheit(x: Int): String{
         var result =""
-
-
+        var temp: Double = (x-273)*1.8 +32
+        result = temp.toString()
         return result
     }
 
