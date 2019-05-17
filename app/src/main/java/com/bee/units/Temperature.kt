@@ -37,17 +37,17 @@ class Temperature: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedL
         if(parent.getId()==(R.id.fromSpinner)) {
             parent.getItemAtPosition(pos)
             when (pos) {
-                1 -> from = "c"
-                2 -> from = "f"
-                3 -> from = "k"
+                0 -> from = "c"
+                1 -> from = "f"
+                2 -> from = "k"
             }
 
         }else if(parent.getId()==(R.id.toSpinner)){
             parent.getItemAtPosition(pos)
             when (pos) {
-                1 -> to = "c"
-                2 -> to = "f"
-                3 -> to = "k"
+                0 -> to = "c"
+                1 -> to = "f"
+                2 -> to = "k"
             }
         }
 
@@ -55,9 +55,9 @@ class Temperature: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedL
 
     override fun onNothingSelected(parent: AdapterView<*>) {
         if(parent.getId()==R.id.fromSpinner) {
-            from = "f"
+            from = "c"
         }else{
-            to ="c"
+            to ="f"
         }
     }
 
@@ -86,13 +86,13 @@ class Temperature: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedL
         // Create an ArrayAdapter using the string array and a default spinner layout
         fromSpinner.adapter = ArrayAdapter(
             activity,
-            R.layout.support_simple_spinner_dropdown_item,
+            R.layout.spinner_item,
             resources.getStringArray(R.array.temp_array)
         )
         val toSpinner: Spinner = view.findViewById(R.id.toSpinner)
         toSpinner.adapter = ArrayAdapter(
             activity,
-            R.layout.support_simple_spinner_dropdown_item,
+            R.layout.spinner_item,
             resources.getStringArray(R.array.temp_array)
         )
         fromSpinner.onItemSelectedListener= this
