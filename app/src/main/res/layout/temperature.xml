@@ -53,8 +53,7 @@
                         android:gravity="center"
                         android:layout_centerHorizontal="true"
                         android:layout_below="@id/fromSpinner"
-                        android:shape="oval"
-                        android:background="@color/buttonColor"
+                        android:background="@drawable/btn_rounded"
                         android:layout_height="wrap_content" android:id="@+id/abutton"/>
                 <Spinner
                         android:layout_width="match_parent"
