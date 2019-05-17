@@ -41,31 +41,52 @@
                         android:textStyle="bold"
                         android:layout_below="@id/title"
                         android:id="@+id/textBox"/>
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title"
+                        android:textSize="20sp"
+                        android:text="From: "
+                        android:textColor="@color/textColor"
+                        android:gravity="left"
+                        android:id="@+id/from"
+                        android:paddingBottom="15dp"
+                        android:textStyle="bold"/>
                 <Spinner
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/textBox"
-
                         android:id="@+id/fromSpinner"/>
+                <TextView android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/fromSpinner"
+                          android:textSize="20sp"
+                          android:text="To: "
+                          android:textColor="@color/textColor"
+                          android:gravity="left"
+                          android:id="@+id/to"
+                          android:paddingBottom="15dp"
+                          android:textStyle="bold"/>
+                <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/to"
+                        android:id="@+id/toSpinner"/>
                 <Button
                         android:text="Calculate"
                         android:layout_width="wrap_content"
                         android:gravity="center"
                         android:layout_centerHorizontal="true"
-                        android:layout_below="@id/fromSpinner"
+                        android:layout_below="@id/toSpinner"
                         android:background="@drawable/btn_rounded"
                         android:layout_height="wrap_content" android:id="@+id/abutton"/>
-                <Spinner
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/abutton"
-                        android:id="@+id/toSpinner"/>
+
                 <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/textView"
                         android:textSize="25sp"
-                        android:layout_below="@+id/toSpinner"
+                        android:layout_below="@+id/abutton"
                         android:textColor="@color/textColor"
                         android:textStyle="bold"
                         android:text="Result:"/>

@@ -9,4 +9,5 @@
     <color name="navDrawer">#77216F</color>
     <color name="drawerTop">#2C001E</color>
     <color name="toolBar">#5E2750</color>
+    <color name="spinnerColor">#925375</color>
 </resources>
