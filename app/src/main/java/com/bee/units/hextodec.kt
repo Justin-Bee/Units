@@ -30,7 +30,8 @@ class hextodec: Fragment(), View.OnClickListener {
 
         }
         entry = textBox.text.toString()
-        textBox.setText(entry)
+        val result = convert(entry)
+        textBox.setText(result)
     }
 
     var entry: String = ""
@@ -57,10 +58,7 @@ class hextodec: Fragment(), View.OnClickListener {
 
 
     fun convert(x: String):Int{
-        var result=0
-        var temp: Int
-
-
+        var result= Integer.parseInt(x, 16)
         return result
     }
 
