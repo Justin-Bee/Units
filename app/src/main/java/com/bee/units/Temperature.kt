@@ -102,8 +102,23 @@ class Temperature: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedL
 
     fun convert(x: String):String{
         try {
-            var result = Integer.parseInt(x)
-            if (from.equals("c") && to.equals("f"))
+            var num = Integer.parseInt(x)
+            var result=""
+            if (from.equals("c") && to.equals("f")){
+                result = celsiusToFahrenheit(num)
+            }else if(from.equals("c") && to.equals("k")){
+                result = celsiusToKelvin(num)
+            }else if(from.equals("f") && to.equals("c")){
+                result = fahrenheitToCelcius(num)
+            }else if(from.equals("f") && to.equals("k")){
+                result = fahrenheitToKelvin(num)
+            }else if(from.equals("k") && to.equals("c")){
+                result = kelvinToCelsius(num)
+            }else if(from.equals("k") && to.equals("f")){
+                result = kelvinToFahrenheit(num)
+            }else if(from.equals(to)){
+                 result = "Please choose valid parameters"
+            }
 
             return result.toString()
         }catch(nfe: NumberFormatException){
@@ -111,28 +126,41 @@ class Temperature: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedL
         }
     }
 
-    fun celsiusToFahrenheit(x: Int){
+    fun celsiusToFahrenheit(x: Int): String{
+        var result =""
 
+        return result
     }
 
-    fun celsiusToKelvin(x: Int){
+    fun celsiusToKelvin(x: Int): String{
+        var result =""
 
+        return result
     }
 
-    fun fahrenheitToCelcius(x: Int){
+    fun fahrenheitToCelcius(x: Int): String{
+        var result =""
 
+        return result
     }
 
-    fun fahrenheitToKelvin(x: Int){
+    fun fahrenheitToKelvin(x: Int): String{
+        var result =""
 
+        return result
     }
 
-    fun kelvinToCelsius(x: Int){
+    fun kelvinToCelsius(x: Int): String{
+        var result =""
 
+        return result
     }
 
-    fun kelvinToFahrenheit(x: Int){
+    fun kelvinToFahrenheit(x: Int): String{
+        var result =""
 
+
+        return result
     }
 
 
