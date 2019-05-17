@@ -34,14 +34,15 @@ class Temperature: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedL
 
     override fun onItemSelected(parent: AdapterView<*>, view: View, pos: Int, id: Long) {
         // An item was selected. You can retrieve the selected item using
-        if(parent.getId()==R.id.fromSpinner) {
+        if(parent.getId()==(R.id.fromSpinner)) {
             parent.getItemAtPosition(pos)
             when (pos) {
                 1 -> from = "c"
                 2 -> from = "f"
                 3 -> from = "k"
             }
-        }else{
+
+        }else if(parent.getId()==(R.id.toSpinner)){
             parent.getItemAtPosition(pos)
             when (pos) {
                 1 -> to = "c"
@@ -95,6 +96,7 @@ class Temperature: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedL
             resources.getStringArray(R.array.temp_array)
         )
         fromSpinner.onItemSelectedListener= this
+        toSpinner.onItemSelectedListener = this
 
         return view
     }
@@ -128,7 +130,8 @@ class Temperature: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedL
 
     fun celsiusToFahrenheit(x: Int): String{
         var result =""
-
+        var temp: Double  = (x*1.8)+32
+        result = temp.toString()
         return result
     }
 
@@ -146,6 +149,8 @@ class Temperature: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedL
 
     fun fahrenheitToKelvin(x: Int): String{
         var result =""
+
+
 
         return result
     }
