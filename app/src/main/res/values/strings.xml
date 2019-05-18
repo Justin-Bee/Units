@@ -11,16 +11,19 @@
     <string name="menu_home">Home</string>
     <string name="hextodec">Hex to Dec</string>
     <string name="temp">Temperature</string>
+    <string name="weight">Weight</string>
 
     <string-array name="nav_drawer_labels">
         <item>@string/menu_home</item>
         <item>@string/hextodec</item>
         <item>@string/temp</item>
+        <item>@string/weight</item>
     </string-array>
 
     <string name="title_section1">Home</string>
     <string name="title_section2">HexToDec</string>
     <string name="title_section3">Temperature</string>
+    <string name="title_section4">Weight</string>
 
 
     <string-array name="temp_array">
