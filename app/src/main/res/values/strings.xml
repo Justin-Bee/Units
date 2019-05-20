@@ -9,19 +9,19 @@
     <string name="action_search">Search</string>
 
     <string name="menu_home">Home</string>
-    <string name="hextodec">Hex to Dec</string>
+    <string name="data">Data</string>
     <string name="temp">Temperature</string>
     <string name="weight">Weight</string>
 
     <string-array name="nav_drawer_labels">
         <item>@string/menu_home</item>
-        <item>@string/hextodec</item>
+        <item>@string/data</item>
         <item>@string/temp</item>
         <item>@string/weight</item>
     </string-array>
 
     <string name="title_section1">Home</string>
-    <string name="title_section2">HexToDec</string>
+    <string name="title_section2">Data</string>
     <string name="title_section3">Temperature</string>
     <string name="title_section4">Weight</string>
 
@@ -38,7 +38,12 @@
         <item>Grams</item>
         <item>Kilograms</item>
         <item>Newtons</item>
+    </string-array>
 
+    <string-array name ="data_array">
+        <item>Hexadecimal</item>
+        <item>Decimal</item>
+        <item>Binary</item>
     </string-array>
 
 

@@ -9,7 +9,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.Spinner
-import kotlinx.android.synthetic.main.hextodec.*
+import kotlinx.android.synthetic.main.data.*
 
 class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListener {
 

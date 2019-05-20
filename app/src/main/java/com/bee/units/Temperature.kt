@@ -10,7 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import kotlinx.android.synthetic.main.hextodec.*
+import kotlinx.android.synthetic.main.data.*
 
 
 

@@ -88,8 +88,8 @@ class MainActivity : AppCompatActivity(), FragmentDrawer.FragmentDrawerListener 
                 title = getString(R.string.menu_home)
             }
             1 -> {
-                fragment = hextodec()
-                title = getString(R.string.hextodec)
+                fragment = Data()
+                title = getString(R.string.data)
             }
             2 -> {
                 fragment = Temperature()
