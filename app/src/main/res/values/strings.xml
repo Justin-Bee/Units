@@ -32,6 +32,15 @@
         <item>Kelvin</item>
     </string-array>
 
+    <string-array name="weight_array">
+        <item>Ounces</item>
+        <item>Pounds</item>
+        <item>Grams</item>
+        <item>Kilograms</item>
+        <item>Newtons</item>
+
+    </string-array>
+
 
 
 
