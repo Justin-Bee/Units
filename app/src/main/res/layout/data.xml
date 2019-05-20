@@ -56,7 +56,7 @@
                 <Spinner
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/textBox"
+                        android:layout_below="@+id/from"
                         android:paddingBottom="15dp"
                         android:id="@+id/fromSpinner"/>
                 <TextView android:layout_width="fill_parent"
