@@ -81,7 +81,6 @@
                         android:gravity="center"
                         android:layout_centerHorizontal="true"
                         android:layout_below="@id/toSpinner"
-                        android:paddingBottom="15dp"
                         android:background="@drawable/btn_rounded"
                         android:layout_height="wrap_content" android:id="@+id/abutton"/>
 
