@@ -109,7 +109,7 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
             }else if(from.equals("o") && to.equals("k")){
                 result = ouncesToKilos(num)
             }else if(from.equals("o") && to.equals("n")){
-                result = ouncesToNewtons
+                result = ouncesToNewtons(num)
             }else if(from.equals("p")  && to.equals("o")){
                 result = poundsToOunces(num)
             }else if(from.equals("p") && to.equals("g")){
@@ -153,7 +153,124 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
         }
     }
 
+    fun ouncesToPounds(num:Int):String{
+      var result =""
+        var weight:Double = num /16.0
+        result = weight.toString()
+        return result
+    }
 
+    fun ouncesToGrams(num: Int): String{
+        var result =""
 
+        return result
+    }
 
+    fun ouncesToKilos(num: Int):String{
+        var result=""
+
+        return result
+    }
+
+    fun ouncesToNewtons(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun poundsToOunces(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun poundsToGrams(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun poundsToKilos(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun poundsToNewtons(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun gramsToOunces(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun gramsToPounds(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun gramsToKilos(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun gramsToNewtons(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun kilosToOunces(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun kilosToPounds(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun kilosToGrams(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun kilosToNewtons(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun newtonsToOunces(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun newtonsToPounds(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun newtonsToGrams(num: Int): String{
+        var result=""
+
+        return result
+    }
+
+    fun newtonsToKilos(num: Int): String{
+        var result=""
+
+        return result
+    }
 }
