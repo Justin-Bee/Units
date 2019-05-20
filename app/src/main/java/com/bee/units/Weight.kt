@@ -162,115 +162,134 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
 
     fun ouncesToGrams(num: Int): String{
         var result =""
-
+        var weight: Double = num * 28.3495
+        result = weight.toString()
         return result
     }
 
     fun ouncesToKilos(num: Int):String{
         var result=""
-
+        var weight: Double = (num /35.274)
+        result = weight.toString()
         return result
     }
 
     fun ouncesToNewtons(num: Int): String{
         var result=""
-
+        var weight: Double = (num /35.274) * 9.807
+        result = weight.toString()
         return result
     }
 
     fun poundsToOunces(num: Int): String{
         var result=""
-
+        var weight: Double = num/16.0
+        result = weight.toString()
         return result
     }
 
     fun poundsToGrams(num: Int): String{
         var result=""
-
+        var weight:Double = num * 453.592
+        result = weight.toString()
         return result
     }
 
     fun poundsToKilos(num: Int): String{
         var result=""
-
+        var weight: Double = num / 2.205
+        result = weight.toString()
         return result
     }
 
     fun poundsToNewtons(num: Int): String{
         var result=""
-
+        var weight: Double = (num / 2.205) * 9.807
+        result = weight.toString()
         return result
     }
 
     fun gramsToOunces(num: Int): String{
         var result=""
-
+        var weight: Double = num / 28.35
+        result = weight.toString()
         return result
     }
 
     fun gramsToPounds(num: Int): String{
         var result=""
-
+        var weight: Double = num /453.592
+        result = weight.toString()
         return result
     }
 
     fun gramsToKilos(num: Int): String{
         var result=""
-
+        var weight: Double = num / 1000.0
+        result = weight.toString()
         return result
     }
 
     fun gramsToNewtons(num: Int): String{
         var result=""
-
+        var weight: Double = (num/1000)* 9.807
+        result = weight.toString()
         return result
     }
 
     fun kilosToOunces(num: Int): String{
         var result=""
-
+        var weight: Double = num * 35.274
+        result = weight.toString()
         return result
     }
 
     fun kilosToPounds(num: Int): String{
         var result=""
-
+        var weight: Double = num *  2.205
+        result = weight.toString()
         return result
     }
 
     fun kilosToGrams(num: Int): String{
         var result=""
-
+        var weight: Double = num * 1000.0
+        result = weight.toString()
         return result
     }
 
     fun kilosToNewtons(num: Int): String{
         var result=""
-
+        var weight: Double = num * 9.807
+        result = weight.toString()
         return result
     }
 
     fun newtonsToOunces(num: Int): String{
         var result=""
-
+        var weight: Double = (num/9.807) * 35.274
+        result = weight.toString()
         return result
     }
 
     fun newtonsToPounds(num: Int): String{
         var result=""
-
+        var weight: Double = (num/9.807) * 2.205
+        result = weight.toString()
         return result
     }
 
     fun newtonsToGrams(num: Int): String{
         var result=""
-
+        var weight: Double = (num /9.807) * 1000
+        result = weight.toString()
         return result
     }
 
     fun newtonsToKilos(num: Int): String{
         var result=""
-
+        var weight: Double = num /9.807
+        result = weight.toString()
         return result
     }
 }
