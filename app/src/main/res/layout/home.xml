@@ -28,7 +28,18 @@
                         android:textSize="35sp"
                         android:text="Home"
                         android:gravity="center"
-                        android:id="@+id/textView2"
+                        android:id="@+id/title"
+                        android:paddingBottom="15dp"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"/>
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Welcome to the Unit Conversion App! There are many functions to this app so far but if there is a conversion you would like to see please leave a comment and it could be added in future versions."
+                        android:gravity="center"
+                        android:layout_below="@+id/title"
+                        android:id="@+id/text1"
                         android:paddingBottom="15dp"
                         android:textColor="@color/textColor"
                         android:textStyle="bold"/>
