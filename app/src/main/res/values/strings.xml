@@ -49,6 +49,15 @@
         <item>Binary</item>
     </string-array>
 
+    <string-array name="length_array">
+        <item>Inches</item>
+        <item>Feet</item>
+        <item>Miles</item>
+        <item>Centimeters</item>
+        <item>Meters</item>
+        <item>Kilometers</item>
+    </string-array>
+
 
 
 
