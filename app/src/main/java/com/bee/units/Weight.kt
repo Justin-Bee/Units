@@ -63,8 +63,8 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
     }
 
     companion object {
-        fun newInstance(): Temperature {
-            return Temperature()
+        fun newInstance(): Weight {
+            return Weight()
         }
     }
 
