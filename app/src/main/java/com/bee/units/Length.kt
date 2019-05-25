@@ -286,7 +286,7 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun centimetersToKilometers(x: Double):String{
         var result=""
-
+        result = (x/100000).toString()
         return result
     }
 
