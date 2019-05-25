@@ -304,7 +304,7 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun metersToMiles(x: Double):String{
         var result=""
-
+        result = (x/1609.344).toString()
         return result
     }
 
