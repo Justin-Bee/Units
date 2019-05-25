@@ -101,7 +101,7 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun convert(x: String):String{
         try {
-            var num = Integer.parseInt(x)
+            var num = x.toDouble()
             var result=""
             if (from.equals("i") && to.equals("f")) {
                 result = inchesToFeet(num)
@@ -154,15 +154,15 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if(from.equals("me") && to.equals("km")){
                 result = metersToKilometers(num)
             }else if(from.equals("km") && to.equals("i")){
-                result = KilometersToInches(num)
+                result = kilometersToInches(num)
             }else if(from.equals("km") && to.equals("f")){
-                result = KilometersToFeet(num)
+                result = kilometersToFeet(num)
             }else if(from.equals("km") && to.equals("m")){
-                result = KilometersToMiles(num)
+                result = kilometersToMiles(num)
             }else if(from.equals("km") && to.equals("c")){
-                result = KilometersToCentimeters(num)
+                result = kilometersToCentimeters(num)
             }else if(from.equals("km") && to.equals("me")){
-                result = KilometersToMeters(num)
+                result = kilometersToMeters(num)
             }
             else{
                 result = "Please choose valid parameters."
@@ -175,5 +175,178 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
         }
     }
 
+    fun inchesToFeet(x: Double):String{
+        return (x/12.0).toString()
+    }
 
+    fun inchesToMiles(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun inchesToCentimeters(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun inchesToMeters(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun inchesToKilometers(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun feetToInches(x: Double):String{
+        return (x*12.0).toString()
+    }
+
+    fun feetToMiles(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun feetToCentimeters(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun feetToMeters(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun feetToKilometers(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun milesToInches(x:Double):String{
+        var result=""
+        return result
+    }
+
+    fun milesToFeet(x:Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun milesToCentimeters(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun milesToMeters(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun milesToKilometers(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun centimetersToInches(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun centimetersToFeet(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun centimetersToMiles(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun centimetersToMeters(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun centimetersToKilometers(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun metersToInches(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun metersToFeet(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun metersToMiles(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun metersToCentimeters(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun metersToKilometers(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun kilometersToInches(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun kilometersToFeet(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun kilometersToMiles(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun kilometersToCentimeters(x: Double):String{
+        var result=""
+
+        return result
+    }
+
+    fun kilometersToMeters(x: Double):String{
+        var result=""
+
+        return result
+    }
 }
