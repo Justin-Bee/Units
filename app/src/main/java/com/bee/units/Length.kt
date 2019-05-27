@@ -227,7 +227,7 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun feetToKilometers(x: Double):String{
         var result=""
-
+        result = (x/3280.84).toString()
         return result
     }
 
