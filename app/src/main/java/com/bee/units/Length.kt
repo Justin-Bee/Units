@@ -181,7 +181,7 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun inchesToMiles(x: Double):String{
         var result=""
-
+        resukt = (x/63360).toString()
         return result
     }
 
