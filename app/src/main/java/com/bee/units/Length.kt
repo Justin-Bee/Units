@@ -292,7 +292,7 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun metersToInches(x: Double):String{
         var result=""
-
+        result = (x*39.37).toString()
         return result
     }
 
