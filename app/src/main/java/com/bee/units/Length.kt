@@ -199,7 +199,7 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun inchesToKilometers(x: Double):String{
         var result=""
-
+        result = (x/39370.079).toString()
         return result
     }
 
