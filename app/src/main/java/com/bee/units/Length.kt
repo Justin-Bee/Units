@@ -181,7 +181,7 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun inchesToMiles(x: Double):String{
         var result=""
-        resukt = (x/63360).toString()
+        result = (x/63360).toString()
         return result
     }
 
@@ -215,13 +215,13 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun feetToCentimeters(x: Double):String{
         var result=""
-
+        result = (x*30.48).toString()
         return result
     }
 
     fun feetToMeters(x: Double):String{
         var result=""
-
+        result = (x/3.281).toString()
         return result
     }
 
@@ -245,19 +245,19 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun milesToCentimeters(x: Double):String{
         var result=""
-
+        result = (x*160934.4).toString()
         return result
     }
 
     fun milesToMeters(x: Double):String{
         var result=""
-
+        result = (x*1609.344).toString()
         return result
     }
 
     fun milesToKilometers(x: Double):String{
         var result=""
-
+        result = (x*1.609).toString()
         return result
     }
 
