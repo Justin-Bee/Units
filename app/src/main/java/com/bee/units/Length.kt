@@ -329,25 +329,25 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun kilometersToFeet(x: Double):String{
         var result=""
-
+        result = (x*3280.84).toString()
         return result
     }
 
     fun kilometersToMiles(x: Double):String{
         var result=""
-
+        result = (x/1.609).toString()
         return result
     }
 
     fun kilometersToCentimeters(x: Double):String{
         var result=""
-
+        result = (x*100000).toString()
         return result
     }
 
     fun kilometersToMeters(x: Double):String{
         var result=""
-
+        result = (x*1000).toString()
         return result
     }
 }
