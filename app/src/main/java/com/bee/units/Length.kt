@@ -269,7 +269,7 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun centimetersToFeet(x: Double):String{
         var result=""
-
+        result = (x/30.48).toString()
         return result
     }
 
