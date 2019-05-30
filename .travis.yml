@@ -1,5 +1,6 @@
 language: android
-dist: trusty
+#dist: trusty
+os: linux
 jdk: oraclejdk8
 sudo: false
 before_install:
