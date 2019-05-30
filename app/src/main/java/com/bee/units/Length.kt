@@ -180,27 +180,19 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
     }
 
     fun inchesToMiles(x: Double):String{
-        var result=""
-        result = (x/63360).toString()
-        return result
+        return (x/63360).toString()
     }
 
     fun inchesToCentimeters(x: Double):String{
-        var result=""
-        result = (x*2.54).toString()
-        return result
+        return (x*2.54).toString()
     }
 
     fun inchesToMeters(x: Double):String{
-        var result=""
-        result = (x/39.37).toString()
-        return result
+        return (x/39.37).toString()
     }
 
     fun inchesToKilometers(x: Double):String{
-        var result=""
-        result = (x/39370.079).toString()
-        return result
+        return (x/39370.079).toString()
     }
 
     fun feetToInches(x: Double):String{
@@ -208,146 +200,98 @@ class Length:  Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
     }
 
     fun feetToMiles(x: Double):String{
-        var result=""
-        result = (x/5280).toString()
-        return result
+        return (x/5280).toString()
     }
 
     fun feetToCentimeters(x: Double):String{
-        var result=""
-        result = (x*30.48).toString()
-        return result
+        return (x*30.48).toString()
     }
 
     fun feetToMeters(x: Double):String{
-        var result=""
-        result = (x/3.281).toString()
-        return result
+        return (x/3.281).toString()
     }
 
     fun feetToKilometers(x: Double):String{
-        var result=""
-        result = (x/3280.84).toString()
-        return result
+        return (x/3280.84).toString()
     }
 
     fun milesToInches(x:Double):String{
-        var result=""
-        result = (x*63360).toString()
-        return result
+        return (x*63360).toString()
     }
 
     fun milesToFeet(x:Double):String{
-        var result=""
-        result = (x*5280).toString()
-        return result
+        return (x*5280).toString()
     }
 
     fun milesToCentimeters(x: Double):String{
-        var result=""
-        result = (x*160934.4).toString()
-        return result
+        return (x*160934.4).toString()
     }
 
     fun milesToMeters(x: Double):String{
-        var result=""
-        result = (x*1609.344).toString()
-        return result
+        return (x*1609.344).toString()
     }
 
     fun milesToKilometers(x: Double):String{
-        var result=""
-        result = (x*1.609).toString()
-        return result
+        return (x*1.609).toString()
     }
 
     fun centimetersToInches(x: Double):String{
-        var result=""
-        result = (x/2.54).toString()
-        return result
+        return (x/2.54).toString()
     }
 
     fun centimetersToFeet(x: Double):String{
-        var result=""
-        result = (x/30.48).toString()
-        return result
+        return (x/30.48).toString()
     }
 
     fun centimetersToMiles(x: Double):String{
-        var result=""
-        result = (x/160934.4).toString()
-        return result
+        return (x/160934.4).toString()
     }
 
     fun centimetersToMeters(x: Double):String{
-        var result=""
-        result = (x/100).toString()
-        return result
+        return (x/100).toString()
     }
 
     fun centimetersToKilometers(x: Double):String{
-        var result=""
-        result = (x/100000).toString()
-        return result
+        return (x/100000).toString()
     }
 
     fun metersToInches(x: Double):String{
-        var result=""
-        result = (x*39.37).toString()
-        return result
+        return (x*39.37).toString()
     }
 
     fun metersToFeet(x: Double):String{
-        var result=""
-        result = (x*3.281).toString()
-        return result
+        return (x*3.281).toString()
     }
 
     fun metersToMiles(x: Double):String{
-        var result=""
-        result = (x/1609.344).toString()
-        return result
+        return (x/1609.344).toString()
     }
 
     fun metersToCentimeters(x: Double):String{
-        var result=""
-        result= (x*100).toString()
-        return result
+        return (x*100).toString()
     }
 
     fun metersToKilometers(x: Double):String{
-        var result=""
-        result = (x/1000.0).toString()
-        return result
+        return (x/1000.0).toString()
     }
 
     fun kilometersToInches(x: Double):String{
-        var result=""
-        result = (x*39370.079).toString()
-        return result
+        return (x*39370.079).toString()
     }
 
     fun kilometersToFeet(x: Double):String{
-        var result=""
-        result = (x*3280.84).toString()
-        return result
+        return (x*3280.84).toString()
     }
 
     fun kilometersToMiles(x: Double):String{
-        var result=""
-        result = (x/1.609).toString()
-        return result
+        return (x/1.609).toString()
     }
 
     fun kilometersToCentimeters(x: Double):String{
-        var result=""
-        result = (x*100000).toString()
-        return result
+        return (x*100000).toString()
     }
 
     fun kilometersToMeters(x: Double):String{
-        var result=""
-        result = (x*1000).toString()
-        return result
+        return (x*1000).toString()
     }
 }
