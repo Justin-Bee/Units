@@ -2,6 +2,7 @@ language: android
 #dist: trusty
 os: linux
 dist: xenial
+cache: false
 jdk: oraclejdk8
 sudo: false
 before_install:
