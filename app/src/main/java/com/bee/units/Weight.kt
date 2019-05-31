@@ -39,6 +39,7 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
                 2 -> from = "g"
                 3 -> from = "k"
                 4 -> from = "n"
+                5 -> from = "s"
             }
 
         }else if(parent.getId()==(R.id.toSpinner)){
@@ -49,6 +50,7 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
                 2 -> to = "g"
                 3 -> to = "k"
                 4 -> to = "n"
+                5 -> to = "s"
             }
         }
 
@@ -110,6 +112,8 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
                 result = ouncesToKilos(num)
             }else if(from.equals("o") && to.equals("n")){
                 result = ouncesToNewtons(num)
+            }else if(from.equals("o") && to.equals("s")){
+                result = ouncesToStones(num)
             }else if(from.equals("p")  && to.equals("o")){
                 result = poundsToOunces(num)
             }else if(from.equals("p") && to.equals("g")){
@@ -118,6 +122,8 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
                 result = poundsToKilos(num)
             }else if(from.equals("p") && to.equals("n")){
                 result = poundsToNewtons(num)
+            }else if(from.equals("p") && to.equals("s")){
+                result = poundsToStones(num)
             }else if(from.equals("g") && to.equals("o")){
                 result = gramsToOunces(num)
             }else if(from.equals("g") && to.equals("p")){
@@ -126,6 +132,8 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
                 result = gramsToKilos(num)
             }else if(from.equals("g") && to.equals("n")){
                 result = gramsToNewtons(num)
+            }else if(from.equals("g") && to.equals("s")){
+                result = gramsToStones(num)
             }else if(from.equals("k") && to.equals("o")){
                 result = kilosToOunces(num)
             }else if(from.equals("k") && to.equals("p")){
@@ -134,6 +142,8 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
                 result = kilosToGrams(num)
             }else if(from.equals("k") && to.equals("n")){
                 result = kilosToNewtons(num)
+            }else if(from.equals("k") && to.equals("s")){
+                result = kilosToStones(num)
             }else if(from.equals("n") && to.equals("o")){
                 result = newtonsToOunces(num)
             }else if(from.equals("n") && to.equals("p")){
@@ -142,6 +152,8 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
                 result = newtonsToGrams(num)
             }else if(from.equals("n") && to.equals("k")){
                 result = newtonsToKilos(num)
+            }else if(from.equals("n") && to.equals("s")){
+                result = newtonsToStones(num)
             }else{
                 result = "Please choose valid parameters."
             }
@@ -180,7 +192,12 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
         result = weight.toString()
         return result
     }
-
+    
+    fun ouncesToStones(num: Int):String{
+        var weight: Double = (num/224.0)
+        return weight.toString()
+    }
+        
     fun poundsToOunces(num: Int): String{
         var result=""
         var weight: Double = num/16.0
@@ -207,6 +224,11 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
         var weight: Double = (num / 2.205) * 9.807
         result = weight.toString()
         return result
+    }
+    
+    fun poundsToStones(num: Int):String{
+        var weight: Double = (num/14.0)
+        return weight.toString()
     }
 
     fun gramsToOunces(num: Int): String{
@@ -236,6 +258,11 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
         result = weight.toString()
         return result
     }
+    
+    fun gramsToStones(num: Int):String{
+        var weight: Double = (num/ 6350.293)
+        return weight.toString()
+    }
 
     fun kilosToOunces(num: Int): String{
         var result=""
@@ -264,6 +291,11 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
         result = weight.toString()
         return result
     }
+    
+    fun kilosToStones(num: Int):String{
+        var weight:Double = (num/6.35)
+        return weight.toString()
+    }
 
     fun newtonsToOunces(num: Int): String{
         var result=""
@@ -291,5 +323,10 @@ class Weight: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
         var weight: Double = num /9.807
         result = weight.toString()
         return result
+    }
+    
+    fun newtonsToStones(num: Int):String{
+        var weight:Double = (num/9.807)/6.35
+        return weight.toString()
     }
 }
