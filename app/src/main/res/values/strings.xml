@@ -9,6 +9,7 @@
     <string name="action_search">Search</string>
 
     <string name="menu_home">Home</string>
+    <string name-"cooking">Cooking</string>
     <string name="data">Data</string>
     <string name="length">Length</string>
     <string name="temp">Temperature</string>
@@ -16,6 +17,7 @@
 
     <string-array name="nav_drawer_labels">
         <item>@string/menu_home</item>
+        <item>@string/cooking</item>
         <item>@string/data</item>
         <item>@string/length</item>
         <item>@string/temp</item>
@@ -23,10 +25,11 @@
     </string-array>
 
     <string name="title_section1">Home</string>
-    <string name="title_section2">Data</string>
-    <string name="title_section3">Length</string>
-    <string name="title_section4">Temperature</string>
-    <string name="title_section5">Weight</string>
+    <string name="title_section2">Cooking</string>
+    <string name="title_section3">Data</string>
+    <string name="title_section4">Length</string>
+    <string name="title_section5">Temperature</string>
+    <string name="title_section6">Weight</string>
 
 
     <string-array name="temp_array">
@@ -41,6 +44,7 @@
         <item>Grams</item>
         <item>Kilograms</item>
         <item>Newtons</item>
+        <item>Stones</item>
     </string-array>
 
     <string-array name ="data_array">
@@ -56,6 +60,17 @@
         <item>Centimeters</item>
         <item>Meters</item>
         <item>Kilometers</item>
+    </string-array>
+    
+    <string-array name="cooking_array">
+        <item>Teaspoons</item>
+        <item>Tablespoons</item>
+        <item>Ounces</item>
+        <item>Cups</item>
+        <item>Fluid Ounces</item>
+        <item>Pint</item>
+        <item>Quart</item>
+        <item>Gallon</item>
     </string-array>
 
 
