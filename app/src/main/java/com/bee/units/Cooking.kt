@@ -121,6 +121,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("ts") && to.equals("fo")){
                 result = teaspoonToFluidOunce(num)
             }else if (from.equals("ts") && to.equals("p")){
+                result = teaspoonToPints(num)
             }else if (from.equals("ts") && to.equals("q")){
             }else if (from.equals("ts") && to.equals("g")){
 
@@ -185,6 +186,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun teaspoonToFluidOunce(x: Int):String{
         return (x/6.0).toString()
+    }
+
+    fun teaspoonToPints(x: Int):String{
+        return (x/96.0).toString()
     }
 
 
