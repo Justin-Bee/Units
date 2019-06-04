@@ -65,9 +65,9 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     override fun onNothingSelected(parent: AdapterView<*>) {
         if(parent.getId()==R.id.fromSpinner) {
-            from = "c"
+            from = "ts"
         }else{
-            to ="f"
+            to ="tb"
         }
     }
 
@@ -117,7 +117,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             var num = Integer.parseInt(x)
             var result=""
             if (from.equals("ts") && to.equals("tb")){
-                result = celsiusToFahrenheit(num)
+                result = teaspoonToTablespoon(num)
           
             }else if(from.equals(to)){
                  result = "Please choose valid parameters"
@@ -129,6 +129,8 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
         }
     }
 
-    
+    fun teaspoonToTablespoon(x: Int):String{
+
+    }
 
 }
