@@ -39,12 +39,11 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             when (pos) {
                 0 -> from = "ts"
                 1 -> from = "tb"
-                2 -> from = "o"
-                3 -> from = "c"
-                4 -> from = "fo"
-                5 -> from = "p"
-                6 -> from = "q"
-                7 -> from = "g"     
+                2 -> from = "c"
+                3 -> from = "fo"
+                4 -> from = "p"
+                5 -> from = "q"
+                6 -> from = "g"
             }
 
         }else if(parent.getId()==(R.id.toSpinner)){
@@ -52,12 +51,11 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             when (pos) {
                 0 -> from = "ts"
                 1 -> from = "tb"
-                2 -> from = "o"
-                3 -> from = "c"
-                4 -> from = "fo"
-                5 -> from = "p"
-                6 -> from = "q"
-                7 -> from = "g" 
+                2 -> from = "c"
+                3 -> from = "fo"
+                4 -> from = "p"
+                5 -> from = "q"
+                6 -> from = "g"
             }
         }
 
@@ -118,7 +116,53 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             var result=""
             if (from.equals("ts") && to.equals("tb")){
                 result = teaspoonToTablespoon(num)
-          
+            }else if (from.equals("ts") && to.equals("c")){
+            }else if (from.equals("ts") && to.equals("fo")){
+            }else if (from.equals("ts") && to.equals("p")){
+            }else if (from.equals("ts") && to.equals("q")){
+            }else if (from.equals("ts") && to.equals("g")){
+
+            }else if (from.equals("tb") && to.equals("ts")){
+            }else if (from.equals("tb") && to.equals("c")){
+            }else if (from.equals("tb") && to.equals("fo")){
+            }else if (from.equals("tb") && to.equals("p")){
+            }else if (from.equals("tb") && to.equals("q")){
+            }else if (from.equals("tb") && to.equals("g")){
+
+            }else if (from.equals("c") && to.equals("ts")){
+            }else if (from.equals("c") && to.equals("tb")){
+            }else if (from.equals("c") && to.equals("fo")){
+            }else if (from.equals("c") && to.equals("p")){
+            }else if (from.equals("c") && to.equals("q")){
+            }else if (from.equals("c") && to.equals("g")){
+
+            }else if (from.equals("fo") && to.equals("ts")){
+            }else if (from.equals("fo") && to.equals("tb")){
+            }else if (from.equals("fo") && to.equals("c")){
+            }else if (from.equals("fo") && to.equals("p")){
+            }else if (from.equals("fo") && to.equals("q")){
+            }else if (from.equals("fo") && to.equals("g")){
+
+            }else if (from.equals("p") && to.equals("ts")){
+            }else if (from.equals("p") && to.equals("tb")){
+            }else if (from.equals("p") && to.equals("c")){
+            }else if (from.equals("p") && to.equals("fo")){
+            }else if (from.equals("p") && to.equals("q")){
+            }else if (from.equals("p") && to.equals("g")){
+
+            }else if (from.equals("q") && to.equals("ts")){
+            }else if (from.equals("q") && to.equals("tb")){
+            }else if (from.equals("q") && to.equals("c")){
+            }else if (from.equals("q") && to.equals("fo")){
+            }else if (from.equals("q") && to.equals("p")){
+            }else if (from.equals("q") && to.equals("g")){
+
+            }else if (from.equals("g") && to.equals("ts")){
+            }else if (from.equals("g") && to.equals("tb")){
+            }else if (from.equals("g") && to.equals("c")){
+            }else if (from.equals("g") && to.equals("fo")){
+            }else if (from.equals("g") && to.equals("p")){
+            }else if (from.equals("g") && to.equals("q")){
             }else if(from.equals(to)){
                  result = "Please choose valid parameters"
             }
@@ -130,7 +174,9 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
     }
 
     fun teaspoonToTablespoon(x: Int):String{
-
+        return (x/3.0).toString()
     }
+
+
 
 }

@@ -65,7 +65,6 @@
     <string-array name="cooking_array">
         <item>Teaspoons</item>
         <item>Tablespoons</item>
-        <item>Ounces</item>
         <item>Cups</item>
         <item>Fluid Ounces</item>
         <item>Pint</item>
