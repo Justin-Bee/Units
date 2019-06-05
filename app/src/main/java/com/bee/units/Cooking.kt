@@ -129,6 +129,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("tb") && to.equals("ts")){
                 result = tablespoonToTeaspoon(num)
             }else if (from.equals("tb") && to.equals("c")){
+                result = tablespoonToCup(num)
             }else if (from.equals("tb") && to.equals("fo")){
             }else if (from.equals("tb") && to.equals("p")){
             }else if (from.equals("tb") && to.equals("q")){
@@ -204,6 +205,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
     
     fun tableSpoonToTeaspoon(x: Int):String{
         return (x/3.0).toString()
+    }
+    
+    fun tablespoonToCup(x:Int):String{
+        return (x/16.0).toString()
     }
 
 
