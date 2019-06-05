@@ -125,7 +125,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("ts") && to.equals("q")){
                 result = teaspoonToQuart(num)
             }else if (from.equals("ts") && to.equals("g")){
-
+                result = teaspoonToGallon(num)
             }else if (from.equals("tb") && to.equals("ts")){
             }else if (from.equals("tb") && to.equals("c")){
             }else if (from.equals("tb") && to.equals("fo")){
@@ -195,6 +195,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
     
     fun teaspoonToQuart(x: Int):String{
         return (x/192.0).toString()
+    }
+    
+    fun teaspoonToGallon(x: Int):String{
+        return (x/768.0).toString()
     }
 
 
