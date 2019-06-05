@@ -135,6 +135,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("tb") && to.equals("p")){
                 result = tablespoonToPint(num)
             }else if (from.equals("tb") && to.equals("q")){
+                result = tablespoonToQuart(num)
             }else if (from.equals("tb") && to.equals("g")){
 
             }else if (from.equals("c") && to.equals("ts")){
@@ -219,6 +220,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
     
     fun tablespoonToPint(x: Int):String{
         return (x/32.0).toString()
+    }
+    
+    fun tablespoonToQuart(x: Int):String{
+        return (x/64.0).toString()
     }
 
 
