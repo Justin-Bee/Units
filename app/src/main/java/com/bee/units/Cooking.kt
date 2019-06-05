@@ -133,6 +133,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("tb") && to.equals("fo")){
                 result = tablespoonToFluidOunce(num)
             }else if (from.equals("tb") && to.equals("p")){
+                result = tablespoonToPint(num)
             }else if (from.equals("tb") && to.equals("q")){
             }else if (from.equals("tb") && to.equals("g")){
 
@@ -214,6 +215,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
     
     fun tablespoonToFluidOunce(x: Int):String{
         return (x/2.0).toString()
+    }
+    
+    fun tablespoonToPint(x: Int):String{
+        return (x/32.0).toString()
     }
 
 
