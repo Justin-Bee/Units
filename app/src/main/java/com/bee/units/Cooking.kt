@@ -145,7 +145,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("c") && to.equals("fo")){
                 result = cupToFluidOunce(num)
             }else if (from.equals("c") && to.equals("p")){
-                result = cupsToPints(num)
+                result = cupToPints(num)
             }else if (from.equals("c") && to.equals("q")){
             }else if (from.equals("c") && to.equals("g")){
 
@@ -246,6 +246,9 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
         return (x*8.0).toString()
     }
     
+    fun cupToPints(x: Int):String{
+        return (x/2.0).toString()
+    }
 
 
 
