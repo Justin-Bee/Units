@@ -225,6 +225,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
     fun tablespoonToQuart(x: Int):String{
         return (x/64.0).toString()
     }
+    
+    fun tablespoonToGallon(x:int)String{
+        return (x/256.0).toString()
+    }
 
 
 
