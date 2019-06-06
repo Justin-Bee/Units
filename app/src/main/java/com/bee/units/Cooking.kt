@@ -137,7 +137,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("tb") && to.equals("q")){
                 result = tablespoonToQuart(num)
             }else if (from.equals("tb") && to.equals("g")){
-
+                result = tablespoonToGallon(num)
             }else if (from.equals("c") && to.equals("ts")){
             }else if (from.equals("c") && to.equals("tb")){
             }else if (from.equals("c") && to.equals("fo")){
