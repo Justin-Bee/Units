@@ -143,6 +143,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("c") && to.equals("tb")){
                 result = cupToTablespoon(num)
             }else if (from.equals("c") && to.equals("fo")){
+                result = cupToFluidOunce(num)
             }else if (from.equals("c") && to.equals("p")){
             }else if (from.equals("c") && to.equals("q")){
             }else if (from.equals("c") && to.equals("g")){
