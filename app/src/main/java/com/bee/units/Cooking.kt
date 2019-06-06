@@ -206,7 +206,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
         return (x/768.0).toString()
     }
     
-    fun tableSpoonToTeaspoon(x: Int):String{
+    fun tablespoonToTeaspoon(x: Int):String{
         return (x/3.0).toString()
     }
     
