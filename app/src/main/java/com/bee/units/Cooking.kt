@@ -235,6 +235,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
     fun cupToTeaspoon(x: Int):String{
         return (x*48.0).toString()
     }
+    
+    fun cupToTablespoon(x: Int):String{
+        return (x*16.0).toString()
+    }
 
 
 
