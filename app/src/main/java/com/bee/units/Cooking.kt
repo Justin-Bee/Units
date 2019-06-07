@@ -149,7 +149,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("c") && to.equals("q")){
                 result = cupsToQuarts(num)
             }else if (from.equals("c") && to.equals("g")){
-
+                result = cupToGallons(num)
             }else if (from.equals("fo") && to.equals("ts")){
             }else if (from.equals("fo") && to.equals("tb")){
             }else if (from.equals("fo") && to.equals("c")){
@@ -253,6 +253,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun cupsToQuarts(x: Int):String {
         return (x / 4.0).toString()
+    }
+
+    fun cupToGallons(x: Int):String {
+        return (x / 16.0).toString()
     }
 
 
