@@ -5,6 +5,10 @@
 [![Build Status](https://travis-ci.com/Justin-Bee/Units.svg?branch=master)](https://travis-ci.com/Justin-Bee/Units)
 
 ## About
+
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
+      alt="Get it on Google Play"
+      height="80">](https://play.google.com/store/apps/details?id=com.bee.units&hl=en_US)
 This is the source code for the android app Units.
 Units is written in Kotlin. It uses a navigation drawer layout with fragments.
 
