@@ -167,6 +167,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("fo") && to.equals("g")){
                 result = fluidOunceToGallon(num)
             }else if (from.equals("p") && to.equals("ts")){
+                result = pintToTeaspoon(num)
             }else if (from.equals("p") && to.equals("tb")){
             }else if (from.equals("p") && to.equals("c")){
             }else if (from.equals("p") && to.equals("fo")){
@@ -292,7 +293,9 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
         return (x/128.0).toString()
     }
 
-
+    fun pintToTeaspoon(x: Int):String{
+        return (x*96.0).toString()
+    }
 
     
 }
