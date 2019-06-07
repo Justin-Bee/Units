@@ -13,7 +13,11 @@ import android.widget.*
 import kotlinx.android.synthetic.main.data.*
 
 
-
+/**
+* @author Justin Bee
+ * @version June 7th, 2019
+*
+ */
 class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListener {
 
     var from:String=""
@@ -157,9 +161,11 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("fo") && to.equals("c")){
                 result = fluidOunceToCup(num)
             }else if (from.equals("fo") && to.equals("p")){
+                result = fluidOunceToPint(num)
             }else if (from.equals("fo") && to.equals("q")){
+                result = fluidOunceToQuart(num)
             }else if (from.equals("fo") && to.equals("g")){
-
+                result = fluidOunceToGallon(num)
             }else if (from.equals("p") && to.equals("ts")){
             }else if (from.equals("p") && to.equals("tb")){
             }else if (from.equals("p") && to.equals("c")){
@@ -272,6 +278,18 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
     
     fun fluidOunceToCup(x: Int):String{
         return (x/8.0).toString()
+    }
+
+    fun fluidOunceToPint(x: Int):String{
+        return (x/16.0).toString()
+    }
+
+    fun fluidOunceToQuart(x: Int):String{
+        return (x/32.0).toString()
+    }
+
+    fun fluidOunceToGallon(x: Int):String{
+        return (x/128.0).toString()
     }
 
 
