@@ -155,6 +155,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("fo") && to.equals("tb")){
                 result = fluidOunceToTablespoon(num)
             }else if (from.equals("fo") && to.equals("c")){
+                result = fluidOunceToCup(num)
             }else if (from.equals("fo") && to.equals("p")){
             }else if (from.equals("fo") && to.equals("q")){
             }else if (from.equals("fo") && to.equals("g")){
@@ -267,6 +268,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
     
     fun fluildOunceToTablespoon(x: Int):String{
         return (x*2.0).toString()
+    }
+    
+    fun fluidOunceToCup(x: Int):String{
+        return (x/8.0).toString()
     }
 
 
