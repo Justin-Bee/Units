@@ -308,5 +308,9 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
         return (x*2.0).toString()
     }
 
+    fun pintToFluidOunce(x: Int):String{
+        return (x*16.0).toString()
+    }
+
     
 }
