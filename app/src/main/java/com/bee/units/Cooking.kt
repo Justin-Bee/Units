@@ -303,5 +303,9 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
         return (x*32.0).toString()
     }
 
+    fun pintToCup(x: Int):String{
+        return (x*2.0).toString()
+    }
+
     
 }
