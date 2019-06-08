@@ -175,6 +175,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("p") && to.equals("fo")){
                 result = pintToFluidOunce(num)
             }else if (from.equals("p") && to.equals("q")){
+                result = pintToQuart(num)
             }else if (from.equals("p") && to.equals("g")){
 
             }else if (from.equals("q") && to.equals("ts")){
@@ -310,6 +311,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun pintToFluidOunce(x: Int):String{
         return (x*16.0).toString()
+    }
+
+    fun pintToQuart(x: Int):String{
+        return (x/2.0).toString()
     }
 
     
