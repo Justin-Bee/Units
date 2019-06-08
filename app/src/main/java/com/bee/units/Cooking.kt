@@ -298,5 +298,9 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
         return (x*96.0).toString()
     }
 
+    fun pintToTablespoon(x: Int):String{
+        return (x*32.0).toString()
+    }
+
     
 }
