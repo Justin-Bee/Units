@@ -173,6 +173,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("p") && to.equals("c")){
                 result = pintToCup(num)
             }else if (from.equals("p") && to.equals("fo")){
+                result = pintToFluidOunce(num)
             }else if (from.equals("p") && to.equals("q")){
             }else if (from.equals("p") && to.equals("g")){
 
