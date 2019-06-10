@@ -189,7 +189,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("q") && to.equals("p")){
                 result = quartToPints(num)
             }else if (from.equals("q") && to.equals("g")){
-
+                result = quartToGallons(num)
             }else if (from.equals("g") && to.equals("ts")){
             }else if (from.equals("g") && to.equals("tb")){
             }else if (from.equals("g") && to.equals("c")){
@@ -344,6 +344,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun quartToPints(x: Int):String{
         return (x*2.0).toString()
+    }
+
+    fun quartToGallons(x: Int):String{
+        return (x/4.0).toString()
     }
 
     
