@@ -181,6 +181,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("q") && to.equals("ts")){
                 result = quartToTeaspoon(num)
             }else if (from.equals("q") && to.equals("tb")){
+                result = quartToTablespoon(num)
             }else if (from.equals("q") && to.equals("c")){
             }else if (from.equals("q") && to.equals("fo")){
             }else if (from.equals("q") && to.equals("p")){
@@ -324,6 +325,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun quartToTeaspoon(x: Int):String{
         return (x*192.0).toString()
+    }
+
+    fun quartToTablespoon(x: Int):String{
+        return (x*64.0).toString()
     }
 
     
