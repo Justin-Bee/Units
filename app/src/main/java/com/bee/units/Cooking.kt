@@ -22,6 +22,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     var from:String=""
     var to:String =""
+    var entry: String = ""
 
 
     override fun onClick(v: View?) {
@@ -53,13 +54,13 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
         }else if(parent.getId()==(R.id.toSpinner)){
             parent.getItemAtPosition(pos)
             when (pos) {
-                0 -> from = "ts"
-                1 -> from = "tb"
-                2 -> from = "c"
-                3 -> from = "fo"
-                4 -> from = "p"
-                5 -> from = "q"
-                6 -> from = "g"
+                0 -> to = "ts"
+                1 -> to = "tb"
+                2 -> to = "c"
+                3 -> to = "fo"
+                4 -> to = "p"
+                5 -> to = "q"
+                6 -> to = "g"
             }
         }
 
@@ -74,7 +75,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
     }
 
 
-    var entry: String = ""
+
 
 
     companion object {
@@ -202,11 +203,11 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
                 result = gallonToPints(num)
             }else if (from.equals("g") && to.equals("q")){
                 result = gallonToQuart(num)
-            }else if(from.equals(to)){
+            }else{
                  result = "Please choose valid parameters"
             }
 
-            return result
+            return result.toString()
         }catch(nfe: NumberFormatException){
             return ("Invalid Input")
         }
