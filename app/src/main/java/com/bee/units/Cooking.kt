@@ -199,7 +199,9 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("g") && to.equals("fo")){
                 result = gallonToFluidOunce(num)
             }else if (from.equals("g") && to.equals("p")){
+                result = gallonToPints(num)
             }else if (from.equals("g") && to.equals("q")){
+                resutl = gallonToQuart(num)
             }else if(from.equals(to)){
                  result = "Please choose valid parameters"
             }
@@ -370,5 +372,12 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
         return (x*128.0).toString()
     }
 
+    fun gallonToPints(x: Int):String{
+        return (x*8.0).toString()
+    }
+
+    fun gallonToQuart(x: Int):String{
+        return (x*4.0).toString()
+    }
     
 }
