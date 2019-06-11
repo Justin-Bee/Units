@@ -201,7 +201,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("g") && to.equals("p")){
                 result = gallonToPints(num)
             }else if (from.equals("g") && to.equals("q")){
-                resutl = gallonToQuart(num)
+                result = gallonToQuart(num)
             }else if(from.equals(to)){
                  result = "Please choose valid parameters"
             }
