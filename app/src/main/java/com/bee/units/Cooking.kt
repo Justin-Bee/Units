@@ -197,6 +197,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("g") && to.equals("c")){
                 result = gallonToCup(num)
             }else if (from.equals("g") && to.equals("fo")){
+                result = gallonToFluidOunce(num)
             }else if (from.equals("g") && to.equals("p")){
             }else if (from.equals("g") && to.equals("q")){
             }else if(from.equals(to)){
@@ -363,6 +364,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun gallonToCup(x: Int):String{
         return (x*16.0).toString()
+    }
+
+    fun gallonToFluidOunce(x: Int):String{
+        return (x*128.0).toString()
     }
 
     
