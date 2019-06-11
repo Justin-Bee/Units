@@ -193,6 +193,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
             }else if (from.equals("g") && to.equals("ts")){
                 result = gallonToTeaspoon(num)
             }else if (from.equals("g") && to.equals("tb")){
+                result = gallonToTablespoon(num)
             }else if (from.equals("g") && to.equals("c")){
             }else if (from.equals("g") && to.equals("fo")){
             }else if (from.equals("g") && to.equals("p")){
@@ -353,6 +354,10 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
 
     fun gallonToTeaspoon(x: Int):String{
         return (x*768.0).toString()
+    }
+
+    fun gallonToTablespoon(x: Int):String{
+        return (x*256.0).toString()
     }
 
     
