@@ -206,7 +206,7 @@ class Cooking: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListe
                  result = "Please choose valid parameters"
             }
 
-            return result.toString()
+            return result
         }catch(nfe: NumberFormatException){
             return ("Invalid Input")
         }
