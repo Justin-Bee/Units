@@ -96,14 +96,18 @@ class MainActivity : AppCompatActivity(), FragmentDrawer.FragmentDrawerListener 
                 title = getString(R.string.data)
             }
             3 -> {
+                fragment = Energy()
+                title = getString(R.string.energy)
+            }
+            4 -> {
                 fragment = Length()
                 title = getString(R.string.length)
             }
-            4 -> {
+            5 -> {
                 fragment = Temperature()
                 title = getString(R.string.temp)
             }
-            5 -> {
+            6 -> {
                 fragment = Weight()
                 title = getString(R.string.weight)
             }

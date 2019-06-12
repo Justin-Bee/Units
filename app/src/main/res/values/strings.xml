@@ -11,6 +11,7 @@
     <string name="menu_home">Home</string>
     <string name="cooking">Cooking</string>
     <string name="data">Data</string>
+    <string name="energy">Energy</string>
     <string name="length">Length</string>
     <string name="temp">Temperature</string>
     <string name="weight">Weight</string>
@@ -19,6 +20,7 @@
         <item>@string/menu_home</item>
         <item>@string/cooking</item>
         <item>@string/data</item>
+        <item>@string/energy</item>
         <item>@string/length</item>
         <item>@string/temp</item>
         <item>@string/weight</item>
@@ -27,9 +29,10 @@
     <string name="title_section1">Home</string>
     <string name="title_section2">Cooking</string>
     <string name="title_section3">Data</string>
-    <string name="title_section4">Length</string>
-    <string name="title_section5">Temperature</string>
-    <string name="title_section6">Weight</string>
+    <string name="title_section4">Energy</string>
+    <string name="title_section5">Length</string>
+    <string name="title_section6">Temperature</string>
+    <string name="title_section7">Weight</string>
 
 
     <string-array name="temp_array">
