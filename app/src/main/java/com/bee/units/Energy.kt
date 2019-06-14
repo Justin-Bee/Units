@@ -109,7 +109,7 @@ class Energy: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
             if(from.equals("j") && to.equals("c")){
                 result = joulesToCalories(num)
             }else if(from.equals("j") && to.equals("b")){
-
+                result = joulesToBtu(num)
             }else if(from.equals("j") && to.equals("b")) {
             }else if(from.equals("j") && to.equals("k")) {
             }else if(from.equals("c") && to.equals("j")) {
@@ -135,7 +135,9 @@ class Energy: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
         return (x/4184.0).toString()
     }
 
-    
+    fun joulesToBtu(x: Int):String{
+        return (x/1055.056).toString()
+    }
 
 
 
