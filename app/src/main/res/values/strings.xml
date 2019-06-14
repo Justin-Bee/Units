@@ -75,6 +75,13 @@
         <item>Gallon</item>
     </string-array>
 
+    <string-array name ="energy_array">
+        <item>Joule</item>
+        <item>Calorie</item>
+        <item>Btu</item>
+        <item>Kilowatt-hour</item>
+    </string-array>
+
 
 
 
