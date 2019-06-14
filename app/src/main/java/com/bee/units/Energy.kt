@@ -38,17 +38,19 @@ class Energy: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
         if(parent.getId()==(R.id.fromSpinner)) {
             parent.getItemAtPosition(pos)
             when (pos) {
-                0 -> from = "c"
-                1 -> from = "f"
-                2 -> from = "k"
+                0 -> from = "j"
+                1 -> from = "c"
+                2 -> from = "b"
+                3 -> from = "k"
             }
 
         }else if(parent.getId()==(R.id.toSpinner)){
             parent.getItemAtPosition(pos)
             when (pos) {
-                0 -> to = "c"
-                1 -> to = "f"
-                2 -> to = "k"
+                0 -> to = "j"
+                1 -> to = "c"
+                2 -> to = "b"
+                3 -> to = "k"
             }
         }
 
@@ -56,9 +58,9 @@ class Energy: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
 
     override fun onNothingSelected(parent: AdapterView<*>) {
         if(parent.getId()==R.id.fromSpinner) {
-            from = "c"
+            from = "j"
         }else{
-            to ="f"
+            to ="c"
         }
     }
 
@@ -104,12 +106,33 @@ class Energy: Fragment(), View.OnClickListener, AdapterView.OnItemSelectedListen
         try {
             var num = Integer.parseInt(x)
             var result=""
-            //TODO add if else statements
+            if(from.equals("j") && to.equals("c")){
+                result = joulesToCalories(num)
+            }else if(from.equals("j") && to.equals("b")){
+
+            }else if(from.equals("j") && to.equals("b")) {
+            }else if(from.equals("j") && to.equals("k")) {
+            }else if(from.equals("c") && to.equals("j")) {
+            }else if(from.equals("c") && to.equals("b")) {
+            }else if(from.equals("c") && to.equals("k")) {
+            }else if(from.equals("b") && to.equals("j")) {
+            }else if(from.equals("b") && to.equals("c")) {
+            }else if(from.equals("b") && to.equals("k")) {
+            }else if(from.equals("k") && to.equals("j")) {
+            }else if(from.equals("k") && to.equals("c")) {
+            }else if(from.equals("k") && to.equals("b")) {
+            }else{
+                result = "Please choose valid parameters."
+            }
 
             return result.toString()
         }catch(nfe: NumberFormatException){
             return ("Invalid Input")
         }
+    }
+
+    fun joulesToCalories(x: Int):String{
+        return (x/4184.0).toString()
     }
 
     
