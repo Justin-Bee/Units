@@ -2,7 +2,7 @@
 
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Build Status](https://travis-ci.com/Justin-Bee/Units.svg?branch=master)](https://travis-ci.com/Justin-Bee/Units)
+[![CircleCI](https://circleci.com/gh/Justin-Bee/Units.svg?style=svg)](https://circleci.com/gh/Justin-Bee/Units)
 [![Author](https://img.shields.io/badge/Author-Justin%20Bee-blue.svg)](mailto:jbee.appz@gmail.com)
 
 
