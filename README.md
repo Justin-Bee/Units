@@ -13,7 +13,7 @@
       height="80">](https://play.google.com/store/apps/details?id=com.bee.units&hl=en_US)
  
 This is the source code for the android app Units.
-Units is written in Kotlin. It uses a navigation drawer layout with fragments.
+Units is written in Kotlin. It uses a navigation drawer layout with fragments. My inspiration behind this app was just to experiment with Kotlin. 
 
 ## Copyright and License
 
